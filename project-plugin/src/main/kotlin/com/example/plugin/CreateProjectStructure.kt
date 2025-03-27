@@ -3,7 +3,7 @@ import org.gradle.api.tasks.*
 import org.gradle.api.tasks.options.Option
 import java.io.File
 
-abstract class CreateProjectStructure: DefaultTask() {
+abstract class CreateFoldernFile: DefaultTask() {
 
     private var txtFileName: String? = null
     private val folderName = "plugin-folder"

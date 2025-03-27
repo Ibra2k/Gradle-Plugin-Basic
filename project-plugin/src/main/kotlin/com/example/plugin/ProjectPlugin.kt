@@ -1,6 +1,6 @@
 package com.example.plugin
 
-import CreateProjectStructure
+import CreateFoldernFile
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
@@ -10,7 +10,7 @@ class ProjectPlugin : Plugin<Project>{
 
     override fun apply(project: Project) {
 
-        project.tasks.register("createFolder", CreateProjectStructure::class.java){
+        project.tasks.register("createFolder", CreateFoldernFile::class.java){
             group = pluginGroup
             description = "Creates a folder named 'plugin-folder' and a file within it 'default.txt' by default"
         }
